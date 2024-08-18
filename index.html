@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea Shop</title>
+    <link rel="shortcut icon" href="./images/cup.png" type="image/x-icon">
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet" />
+    <!-- Font Awesome CDN -->
+    <script
+      src="https://kit.fontawesome.com/4c60d4f833.js"
+      crossorigin="anonymous"></script>
+    <!-- tailwindCss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- TailwindCSS customize section-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="text-gray-800 w-10/12 m-auto">
+      <div class="container grid lg:grid-cols-2 md:grid-cols-1 gap-2">
+        <!-- header text Container -->
+        <section class="text_button_container flex flex-col justify-evenly md:gap-8 gap-4">
+
+          <h1 class="md:text-7xl font-bold text-4xl">
+            It's good <br>
+            tea time at The
+            Tea House
+          </h1>
+          <p class="text-sm md:text-xl w-3/4">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <button
+            class="btn bg-gradient-to-r from-orange-500 to-red-500 text-white px-5 py-3 self-start rounded-lg font-semibold">
+            Explore More
+            <i class="fa-solid fa-arrow-right-long -rotate-45 text-xl"></i>
+          </button>
+        </section>
+        <!-- Header figure Container -->
+        <section
+          class="header_figure_container relative grow-1">
+          <img
+          class="md:h-11/12 w-full h-full object-scale-down"
+            src="./images/banner.png"
+            alt="bubble tea and Gong Cha" />
+          <div
+            class="article__box shadow-lg bg-white absolute top-3/4 left-[10%] text-center px-7 py-5 flex items-center gap-5 rounded-xl">
+            <i class="fa-solid fa-star text-3xl text-yellow-300"></i>
+            <div>
+              <h1 class="text-3xl md:text-4xl font-semibold text-left">5.0</h1>
+              <p class="text-sm md:text-xl whitespace-nowrap font-semibold">
+                Trust Pilot Ratings
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </header>
+    <main class="text-gray-800 w-10/12 m-auto">
+      <section class="hero my-20 text-center">
+        <h1 class="md:text-5xl text-2xl font-bold mb-3">
+          Our Featured Products
+        </h1>
+        <p class="md:w-25">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some <br />
+          form, by injected humour, or randomised words which don't look even
+          slightly believable.
+        </p>
+        <div
+          class="card__container my-5 flex flex-row flex-wrap md:flex-nowrap justify-evenly lg:gap-10 gap-5">
+          <div
+            class="card text-center flex justify-center items-center flex-col md:w-2/5 md:p-5 md:py-10 p-5 gap-3 rounded-xl bg-gradient-to-b from-gray-200">
+            <div class="card__figure md:w-2/3 flex justify-center h-full">
+              <img class="w-full object-contain" src="./images/tea-1.png" alt="" />
+            </div>
+            <p class="item__name text-xl lg:text-2xl font-bold">Milk Tea</p>
+            <p class="text-sm ">Creamer could be replaced by fresh milk</p>
+          </div>
+          <div
+            class="card text-center flex justify-center items-center flex-col md:w-2/5 md:p-5 md:py-10 p-5 gap-3 rounded-xl bg-gradient-to-b from-gray-200">
+            <div class="card__figure md:w-2/3 flex justify-center h-full">
+              <img class="w-full object-contain" src="./images/tea-2.png" alt="" />
+            </div>
+            <p class="item__name text-xl lg:text-2xl font-bold">Black Tea</p>
+            <p class="text-sm ">Creamer could be replaced by fresh milk</p>
+          </div>
+          <div
+            class="card text-center flex justify-center items-center flex-col md:w-2/5 md:p-5 md:py-10 p-5 gap-3 rounded-xl bg-gradient-to-b from-gray-200">
+            <div class="card__figure md:w-2/3 flex justify-center h-full">
+              <img class="w-full h-full object-contain" src="./images/tea-3.png" alt="" />
+            </div>
+            <p class="item__name text-xl lg:text-2xl font-bold">Lemon Tea</p>
+            <p class="text-sm">Creamer could be replaced by fresh milk</p>
+          </div>
+          <div
+            class="card text-center flex justify-center items-center flex-col md:w-2/5 md:p-5 md:py-10 p-5 gap-3 rounded-xl bg-gradient-to-b from-gray-200">
+            <div class="card__figure md:w-2/3 flex justify-center h-full">
+              <img class="w-full object-contain" src="./images/tea-4.png" alt="" />
+            </div>
+            <p class="item__name text-xl lg:text-2xl font-bold">Green Tea</p>
+            <p class="text-sm">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="freshly__container my-10 flex lg:flex-row-reverse flex-col justify-between gap-10 w-full">
+        <article
+          class="fresly__article md:text-left text-center flex-1 flex flex-col justify-between text-inherit">
+          <h1 class="md:text-5xl text-2xl font-bold">
+            Great Tea, <br> Freshly Presented
+          </h1>
+          <p class="text-justify whitespace-wrap">
+            The meaning of gong cha is chanese is to provide the best tea to
+            emperor from all possessions . It represents the highest quality and
+            self expectation. Establishing in 2006, Gong cha had been deeply
+            appreciated by its custoers because of good words of mouth and
+            unique customized service orginated from Taiwan.
+          </p>
+          <div class="text-center md:text-left">
+            <h4 class="md:text-2xl text-xl font-bold mt-3 mb-0">
+              Unique Taste
+            </h4>
+            <p class="md:w-3/4">
+              A Unique and different style from other teapots gives a luxurious
+              and minimalist impression
+            </p>
+          </div>
+          <div class="text-center md:text-left">
+            <h4 class="md:text-2xl text-xl font-bold mt-3 mb-0 md:text-left">
+              Premium Quality
+            </h4>
+            <p class="md:w-3/4">
+              Premium Quality that makes tea more elegant and more durable when
+              you use it.
+            </p>
+          </div>
+        </article>
+        <div class="freshly__figure grid md:grid-cols-2 md:gap-8 gap-5 flex-1">
+          <div class="h-40 bg-gradient-to-r from-red-200 rounded-lg"></div>
+          <div
+            class="figure_one bg-gradient-to-b from-green-200 row-span-2 grid place-content-center rounded-lg">
+            <img class="py-8" src="./images/fresh-1.png" alt="" />
+          </div>
+          <div
+            class="figure_two bg-gradient-to-b from-yellow-200 row-span-2 grid place-content-center rounded-lg">
+            <img class="py-8" src="./images/fresh-2.png" alt="" />
+          </div>
+          <div class="h-40 bg-gradient-to-l from-gray-400 rounded-lg">
+          </div>
+        </div>
+      </section>
+      <!--Client Review Section -->
+      <section class="review__container transition-all w-full bg-gradient-to-l from-red-600 to-orange-500 rounded-lg flex md:flex-col lg:flex-row flex-col my-10">
+        <div class="description flex-1 md:p-10 p-5 flex flex-col gap-5 justify-center bg-[url('./images/bg_cup.png')] bg-no-repeat bg-[length:400px_300px] bg-[bottom_left_10rem] bg-blend-multiply">
+          <h1 class="md:text-6xl text-3xl font-bold text-white w-3/4">Meet Our Super Clients</h1>
+          <p class="text-white my-3 text-xl">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+          <button class="btn text-orange-600 bg-white text-xl px-5 py-3 self-start rounded-lg font-bold">Show All</button>
+        </div>
+
+
+        <div class="client__card md:flex-1 grid grid-cols-12 translate-y-20 pl-10">
+
+          <div class="client__card__one shadow-xl w-11/12 bg-gray-300 pt-6 px-4 pb-4 min-h-fit relative rounded-xl col-span-12 md:col-start-2 col-start-1 row-start-1 md:opacity-30 opacity-70 md:hover:duration-1000 md:hover:scale-110 md:hover:z-50 md:hover:opacity-100 peer">
+            <img src="./images/coldman.jpg" alt="" class="client__figure bg-white absolute -top-5 -left-5 rounded-full p-1">
+            <p class="mt-6">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+            <h5 class="font-bold mt-8">Coldman Richard</h5>
+            <small class="italic">Businessman</small>
+            <img class="absolute bottom-6 right-6" src="./images/circles.png" alt="">
+          </div>
+
+          <div class="client__card__two shadow-2xl w-11/12 md:bg-gray-100 bg-gray-300 pt-6 px-4 pb-4 min-h-fit relative rounded-xl md:col-span-11 col-span-12 col-start-1 -translate-y-20 lg:z-20 z-10 opacity-100 md:opacity-100 peer-hover:opacity-90 peer-hover:z-10 md:hover:scale-110 md:hover:duration-1000">
+            <img src="./images/client.png" alt="" class="client__figure bg-white absolute -top-5 -left-5 rounded-full p-1">
+            <p class="mt-6">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+            <h5 class="font-bold mt-8">Ilham Yuda</h5>
+            <small class="italic">Businessman</small>
+            <img class="absolute bottom-6 right-6" src="./images/circles.png" alt="">
+          </div>
+
+          <div class="client__card__three  w-11/12 bg-gray-100 pt-6 px-4 pb-4 min-h-fit relative rounded-xl col-span-12 col-start-1 md:col-start-2 -translate-y-40 drop-shadow-2xl shadow-2xl md:-z-50 z-10 md:hover:z-50 md:hover:opacity-100 md:opacity-30 opacity-100  md:hover:duration-1000 md:hover:scale-110 ">
+            <img src="./images/nayan.jpg" alt="" class="client__figure bg-white absolute -top-5 -left-5 rounded-full p-1">
+            <p class="mt-6">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+            <h5 class="font-bold mt-8">Nayan Biswas</h5>
+            <small class="italic">web Developer</small>
+            <img class="absolute bottom-6 right-6" src="./images/circles.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <!-- News and Events Cards -->
+       <section class="news_events_container my-20 w-full">
+        <h1 class="md:text-6xl text-3xl font-bold text-inherit w-3/4 text-center mx-auto">News & Events</h1>
+        <p class="w-3/4 text-center mx-auto">exotic, artisanal, aromatic, handcrafted, innovative, bold, refreshing, wellness-focused, seasonal, unique blends, organic, sustainably sourced, energizing, calming, vibrant, limited-edition, flavorful, specialty, indulgent, and memorable.</p>
+
+
+
+        <section class="news__card__container grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-8 gap-4 place-items-center my-5 items-stretch">
+          <div class="news__Card bg-gray-50 p-4 rounded-xl border-2 border-solid border-gray-200 flex flex-col justify-evenly gap-3 items-start">
+            <div class="news__figure w-full mx-auto">
+              <img class="mx-auto w-full" src="./images/news-1.png" alt="">
+            </div>
+            <span class="date_time font-semibold">time</span>
+            <h4 class="item__name text-xl lg:text-2xl font-bold">Green Tea</h4>
+            <p class="product__description whitespace-wrap  text-justify tracking-wide break-all">Green tea: antioxidant-rich, soothing, refreshing, calming, energizing, light, earthy, aromatic, traditional, healthful, delicate, grassy, subtly sweet, cleansing, rejuvenating, warm, invigorating, gentle, natural, and balanced.</p>
+            <button class="duration-1000 hover:bg-slate-200 px-7 py-2 mt-4 rounded-lg text-lg text-gray-500 font-bold cursor-pointer hover:outline-none hover:border-none">Learn More</button>
+          </div>
+          <div class="news__Card bg-gray-50 p-4 rounded-xl border-2 border-solid border-gray-200 flex flex-col justify-evenly gap-3 items-start">
+            <div class="news__figure w-full mx-auto">
+              <img class="mx-auto w-full" src="./images/news-2.png" alt="">
+            </div>
+            <span class="date_time font-semibold">time</span>
+            <h4 class="item__name text-xl lg:text-2xl font-bold">Lemon Tea</h4>
+            <p class="product__description whitespace-wrap  text-justify tracking-wide break-all">Lemon honey tea: zesty, soothing, warming, sweet, tangy, comforting, citrusy, immune-boosting, refreshing, revitalizing, aromatic, calming, detoxifying, light, invigorating, smooth, natural, energizing, fragrant, and balancing</p>
+            <button class="duration-1000 hover:bg-slate-200 px-7 py-2 mt-4 rounded-lg text-lg text-gray-500 font-bold cursor-pointer hover:outline-none hover:border-none">Learn More</button>
+          </div>
+          <div class="news__Card bg-gray-50 p-4 rounded-xl border-2 border-solid border-gray-200 flex flex-col justify-evenly gap-3 items-start md:col-span-full lg:col-span-1">
+            <div class="news__figure w-full mx-auto">
+              <img class="mx-auto w-full" src="./images/news-3.png" alt="">
+            </div>
+            <span class="date_time font-semibold">time</span>
+            <h4 class="item__name text-xl lg:text-2xl font-bold">Mint Tea</h4>
+            <p class="product__description whitespace-wrap  text-justify tracking-wide break-all">Mint tea: refreshing, cooling, invigorating, soothing, aromatic, herbal, calming, light, crisp, natural, energizing, uplifting, detoxifying, smooth, digestive, fragrant, rejuvenating, cleansing, relaxing, and revitalizing.</p>
+            <button class="duration-1000 hover:bg-slate-200 px-7 py-2 mt-4 rounded-lg text-lg text-gray-500 font-bold cursor-pointer hover:outline-none hover:border-none">Learn More</button>
+          </div>
+        </section>
+       </section>
+    </main>
+    <footer class="bg-gradient-to-r from-[#FF00001A] to-[#FF893659] pb-10">
+      <nav class="footer__nav text-gray-800 w-10/12 m-auto flex lg:flex-row flex-col justify-between items-center md:py-10 py-5 gap-4">
+        <div class="footer__logo">
+          <img src="./images/cup.png" alt="Cup Logo">
+        </div>
+        <div class="get__started flex justify-center items-center md:flex-row flex-col">
+          <small class="lg:text-xl md:text-lg text-sm font-semibold text-gray-500 lg:mx-6 mx-2 inline">Ready to get strated?</small>
+          <button class="btn self-stretch bg-gradient-to-r from-orange-500 to-red-500 text-white px-5 py-3 self-start rounded-lg font-semibold">Get Started</button>
+        </div>
+      </nav>
+      <section class="footer__container text-gray-600 w-10/12 m-auto grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-10">
+        <div class="one ">
+          <h4 class="md:text-3xl text-2xl font-bold mt-3 mb-0 whitespace-nowrap">Quick Links</h4>
+          <ul class="text-lg font-semibold text-gray-600 mt-5 flex flex-col gap-2">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Insurance</li>
+            <li>Private Policy</li>
+          </ul>
+        </div>
+        <div class="two w-full ">
+          <h4 class="md:text-3xl text-2xl font-bold mt-3 mb-0 whitespace-nowrap">Our Services</h4>
+          <ul class="text-lg font-semibold text-gray-600 mt-5 flex flex-col gap-2">
+            <li>Life Insurance</li>
+            <li>Car Insurance</li>
+            <li>Health Insurance</li>
+            <li>House Insurance</li>
+          </ul>
+        </div>
+        <div class="three  w-full">
+          <h4 class="md:text-3xl text-2xl font-bold mt-3 mb-0 whitespace-nowrap">Help</h4>
+          <ul class="text-lg font-semibold text-gray-600 mt-5 flex flex-col gap-2">
+            <li>FAQs</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="four w-full">
+          <h4 class="md:text-3xl text-2xl font-bold mt-3 mb-0 whitespace-nowrap w-3/5">Subscribe to our <br> newsletter</h4>
+          <div class="text-lg font-semibold text-gray-600 mt-5 flex">
+            <input type="text" placeholder="Email Address" class="border-b-2 border-gray-400 bg-transparent grow focus:outline-none placeholder:text-pink-500"/>
+            <button class="self-start rounded-full bg-gradient-to-r from-orange-500 to-red-500 text-sm py-2 px-3 text-white font-extralight"><i class="fa-solid fa-angle-up rotate-90"></i></button>
+        </div>
+        <div class="social__logo my-10">
+          <ul class="flex gap-8 text-2xl justify-start text-gray-400">
+            <li><i class="fa-brands fa-facebook-f"></i></li>
+            <li><i class="fa-brands fa-twitter"></i></li>
+            <li><i class="fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </section>
+      <div class="h-0.5 w-full bg-gray-300 my-5"></div>
+      <section>
+          <div>
+            <h1 class="my-5 text-center text-2xl whitespace-nowrap italic font-black">
+              Thanks For Visiting
+            </h1>
+          </div>
+      </section>
+    </footer>
+  </body>
+</html>
